@@ -1,0 +1,126 @@
+:root{
+    --main-brown: #71311D;
+    --secondary-brown: #401D12;
+    --tertiary-brown: #BD6B37;
+
+    --main-white: #FFEFEA;
+}
+
+/* NAV SECTION */
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+    border: 2px solid var(--secondary-brown);
+}
+
+.main-nav--list li{
+    margin-right: 16px;
+
+}
+.main-nav--list li:last-child{
+    padding: 1px 10px;
+    background-color: var(--secondary-brown);
+}
+
+.main-nav--link{
+    color: var(--main-white);
+    
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.main-nav--link:visited,
+.main-nav--link:link{
+    text-decoration: none;
+    
+}
+
+.company-name-container{
+    width: 173px;
+    height: 100%;
+
+    color: var(--main-white);
+    background-color: var(--secondary-brown);
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* DECORATION SECTION */
+.decoration-container{
+    position: relative;
+    
+    height: 100%;
+    width: 100%;
+    
+    overflow: hidden;
+}
+
+.decoration-box{
+    position: absolute;
+    z-index: -1;
+
+    height: 180px;
+    width: 628px;
+
+    background-color: var(--tertiary-brown);
+
+    transform: rotate(-52.67deg);
+
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.8s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.logo{
+    right: 0;
+    transform: translateX(-50%);
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+
+    
+    padding-left: 155px;
+}
+.hero-header{
+    letter-spacing: 1px;
+    color: var(--main-white);
+}
+
+.hero-text{
+    grid-column: 2;
+}
+.hero-img-container{
+    position: absolute;
+    top: 100px;
+    grid-row: 1;
+    grid-column: 1;
+
+    transform: translateX(-105%);
+    box-shadow:  0 0 0 5px var(--main-brown);
+    background-color: var(--main-brown);
+}
+
+.hero-img{
+    height: 800px;
+    width: 573px;
+
+}

@@ -1,0 +1,60 @@
+@font-face{
+    font-family: 'inter';
+    src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf');
+}
+
+html{
+    font-family: 'inter';
+    font-size: 62.5%;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.background--main-brown{
+    background-color: var(--main-brown);
+
+}
+.container-md{
+    height: 260px;
+}
+
+.container-sm{
+    height: 79px;
+}
+
+.container-lg{
+    height: 428px;
+
+}
+
+.main-container{
+    width: 1850px;
+    height: 100%;
+}
+
+.padding-sm{
+    padding: 10px;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.text-small{
+
+}
+.text-md{
+
+}
+
+.header-lg{
+    font-size: 3.6rem;
+}
