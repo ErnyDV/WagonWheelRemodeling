@@ -224,12 +224,12 @@
 
 
 .services-section{
+    box-sizing: border-box;
     flex-direction: row;
     flex-direction: column;
     align-items: center;
 
-    height: 100%;
-    width: 100%;
+    height: max-content;
     gap: 35px;
     
     z-index: 2;

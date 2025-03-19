@@ -104,7 +104,7 @@ body{
 
 .wrapper{
     position: relative;
-    
+    box-sizing: content-box;
 }
 
 .container-md{
@@ -124,8 +124,9 @@ body{
     background-color: var(--main-brown);
 }
 .flexbox-container-lg--mainbrown{
+    box-sizing: content-box;
     display: flex;
-    max-height: 428px;
+    height: 428px;
     background-color: var(--main-brown);
 }
 
