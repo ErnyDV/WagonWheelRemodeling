@@ -125,7 +125,7 @@ body{
 }
 .flexbox-container-lg--mainbrown{
     display: flex;
-    height: 428px;
+    max-height: 428px;
     background-color: var(--main-brown);
 }
 

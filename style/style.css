@@ -127,9 +127,10 @@
 /* HERO SECTION */
 
 .hero-container{
+    box-sizing: content-box;
     display: grid;
     justify-content: center;
-    grid-template-columns: max-content minmax(25% , max-content);
+    grid-template-columns: max-content minmax(fit-content , max-content);
     grid-template-rows: minmax(25%, 25%);
     column-gap: 50px;
     
@@ -141,6 +142,9 @@
 
 .hero-text-wrapper{
     display: flex;
+
+    overflow: hidden;
+    height: max-content;
     flex-direction: column;
     align-items: center;
 
