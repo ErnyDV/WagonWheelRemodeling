@@ -11,10 +11,11 @@ body{
     background-color: #FFD2C3;
 }
 
+
+
 .flexbox{
     display: flex;
 }
-
 .align-center{
 
 }
@@ -40,26 +41,14 @@ body{
     justify-content: center;
 }
 
-.background--main-brown{
-    background-color: var(--main-brown);
 
-}
-.container-md{
-    height: 260px;
-}
-
-.container-sm{
-    height: 89px;
-}
-
-.container-lg{
-    
-    height: 428px;
-
-}
 
 .box-shadow-bottom{
     box-shadow: 0 5px 0 2px var(--tertiary-brown); 
+}
+
+.border-bottom{
+    border-bottom: 10px solid var(--tertiary-brown);
 }
 
 .main-container{
@@ -71,12 +60,16 @@ body{
     padding: 8px;
 }
 
+.padding-md{
+    padding: 25px;
+}
+
 .position-relative{
     position: relative;
 }
 
 .text-sm{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 .text-md{
     font-size: 2.2rem;
@@ -103,6 +96,88 @@ body{
     text-align: center;
 }
 
+.margin-top-md{
+ margin-top: 44px;
+}
 .margin-bottom-lg{
     margin-bottom: 280px;
+}
+
+.wrapper{
+    position: relative;
+    
+}
+
+.container-md{
+    height: 280px;
+
+}
+
+.flexbox-container-sm--mainbrown{
+    display: flex;
+    height: 89px;
+    background-color: var(--main-brown);
+}
+.flexbox-container-md--mainbrown{
+    display: flex;
+    height: 260px;
+    background-color: var(--main-brown);
+}
+.flexbox-container-lg--mainbrown{
+    display: flex;
+    height: 428px;
+    background-color: var(--main-brown);
+}
+
+.flexbox-container-lg--mainwhite{
+    position: relative;
+    height: 1202px;
+
+}
+
+.seperator-abovecontainer{
+    position: absolute;
+    top: -22px;
+    right: 50%;
+    transform: translateX(50%);
+
+    width: 120px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--tertiary-brown);
+}
+
+.seperator-belowcontainer{
+    position: absolute;
+    top: 22px;
+    right: 50%;
+    transform: translateX(50%);
+
+    width: 120px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--tertiary-brown);
+}
+
+
+.section-title{
+    line-height: 1;
+    
+    gap: 12px;
+    z-index: 2;
+}
+.section-subheader-light{
+    font-weight: 400;
+    color: var(--main-white);
+}
+
+.section-subheader-dark{
+    font-weight: 400;
+    color: var(--secondary-brown);
+}
+
+.section-header{
+    color: var(--tertiary-brown);
+    font-weight: 500;
+    height: min-content;
 }

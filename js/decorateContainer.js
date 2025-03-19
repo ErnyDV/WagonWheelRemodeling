@@ -18,9 +18,9 @@ async function doInterval(fn, seconds){
 async function populateDecorationContainer(){
     decorationContainer.innerHTML = ''
     const maxWidth = decorationContainer.offsetWidth;
-    let currentLeft = -235;
+    let currentLeft = -250;
 
-    while(currentLeft < (maxWidth + 250)){
+    while(currentLeft < (maxWidth + 280)){
         await dotimeout(0.1)
         if(resizeEvent === true) return;
         const decorationBox = document.createElement("div");
