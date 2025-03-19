@@ -52,8 +52,9 @@ body{
 }
 
 .main-container{
+    box-sizing: content-box;
     width: 1850px;
-    height: 100%;
+
 }
 
 .padding-sm{
@@ -99,9 +100,7 @@ body{
 .margin-top-md{
  margin-top: 44px;
 }
-.margin-bottom-lg{
-    margin-bottom: 280px;
-}
+
 
 .wrapper{
     position: relative;
@@ -114,11 +113,12 @@ body{
 }
 
 .flexbox-container-sm--mainbrown{
+    box-sizing: content-box;
     display: flex;
-    height: 89px;
     background-color: var(--main-brown);
 }
 .flexbox-container-md--mainbrown{
+    box-sizing: content-box;
     display: flex;
     height: 260px;
     background-color: var(--main-brown);
@@ -129,6 +129,13 @@ body{
     background-color: var(--main-brown);
 }
 
+
+.flexbox-container-md--mainwhite{
+    position: relative;
+    display: flex;
+    height: 280px;
+
+}
 .flexbox-container-lg--mainwhite{
     position: relative;
     height: 1202px;
@@ -162,7 +169,7 @@ body{
 
 .section-title{
     line-height: 1;
-    
+
     gap: 12px;
     z-index: 2;
 }

@@ -8,6 +8,7 @@
 
 /* NAV SECTION */
 .main-nav{
+    box-sizing: content-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,9 +43,8 @@
 }
 
 .company-name-container{
-    width: 173px;
-    height: 100%;
-
+    
+    padding: 15px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 
@@ -169,7 +169,6 @@
     border: none;
     border-radius: 2px;
 
-    margin-bottom: 155px;
 
     color: #FFEFEA;
     background-color: var(--secondary-brown);
@@ -183,11 +182,15 @@
 }
 
 .slogan{
-    justify-content: center;
+    display: inline-block;
 
+    width: max-content;
+    height: min-content;
+    margin-top: 25px;
+    transform: translateX(45%);
 
     padding: 0 54px;
-    flex-grow: 1;
+    flex-grow: 0;
 
     color: var(--secondary-brown);
     font-style: italic;
@@ -251,16 +254,16 @@
     gap: 27px;
 
     z-index: 2;
-    width: calc((250px + 27px) * 3);
+    width: calc((250px + 25px) * 3);
 
 }
 
 .service-card{
-    flex-grow: 1;
+    flex-grow: 0;
 
-    width: 250px;
     padding-bottom: 25px;
-
+    width: 250px;
+    max-width: 250px;
     border-radius: 6px;
 
     background-color: var(--tertiary-brown);
@@ -275,6 +278,8 @@
     height: 30px;
 }
 .service-title{
+    text-align: center;
+    width: fit-content;
     color: var(--secondary-brown);
     font-size: 2rem;
     font-weight: 600;
