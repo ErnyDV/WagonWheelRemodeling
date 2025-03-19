@@ -97,7 +97,7 @@
 .logo{
     position: absolute;
     z-index: -1;
-    top: 95px;
+    top: 105px;
 
     align-self: center;
 
@@ -120,7 +120,7 @@
     }
 
     100%{
-        top: 95px;
+        top: 105px;
     }
 }
 
@@ -194,20 +194,20 @@
 }
 
 .hero-img-wrapper{
-    top: 100px;
+    height: clamp(10px, 800px, 800px);
+    max-width: 572px;
     grid-row: 1;
     grid-column: 1;
 
 
-    transform: translateY(-75%);
-    box-shadow:  0 448px 0 12px var(--tertiary-brown);
+    transform: translateY(-34%);
+    box-shadow:  0 7px 0 12px var(--tertiary-brown);
 }
 
 .hero-img{
-    max-height: 800px;
-    max-width: 573px;
+    height: 100%;
+    width: 100%;
 
     box-shadow:  0 0 0 12px var(--main-brown);
-
 }
 
