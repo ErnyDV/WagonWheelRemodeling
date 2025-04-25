@@ -6,19 +6,24 @@
 html{
     font-family: 'inter';
     font-size: 62.5%;
+
+    overflow-x: hidden;
 }
 body{
     background-color: #FFD2C3;
+    overflow-x: hidden;
+
 }
 
+.safari-fix{
+    overflow: hidden;
+}
 
 
 .flexbox{
     display: flex;
 }
-.align-center{
 
-}
 .alignjustify-center{
     align-items: center;
     justify-content: center;
@@ -65,6 +70,11 @@ body{
     padding: 25px;
 }
 
+.padding-md-nobottom{
+    padding: 25px;
+    padding-bottom: 0;
+}
+
 .position-relative{
     position: relative;
 }
@@ -105,6 +115,7 @@ body{
 .wrapper{
     position: relative;
     box-sizing: content-box;
+    width: 100%;
 }
 
 .container-md{
@@ -117,6 +128,7 @@ body{
     display: flex;
     background-color: var(--main-brown);
 }
+
 .flexbox-container-md--mainbrown{
     box-sizing: content-box;
     display: flex;
@@ -130,7 +142,19 @@ body{
     background-color: var(--main-brown);
 }
 
+.flexbox-container-xlg--mainbrown{
+    box-sizing: content-box;
+    display: flex;
+    height: 660px;
+    background-color: var(--main-brown);
+}
 
+.flexbox-container-sm--mainwhite{
+    position: relative;
+    display: flex;
+    height: 80px;
+
+}
 .flexbox-container-md--mainwhite{
     position: relative;
     display: flex;
@@ -145,7 +169,7 @@ body{
 
 .seperator-abovecontainer{
     position: absolute;
-    top: -22px;
+    top: 16px;
     right: 50%;
     transform: translateX(50%);
 
@@ -157,7 +181,7 @@ body{
 
 .seperator-belowcontainer{
     position: absolute;
-    top: 22px;
+    bottom: 16px;
     right: 50%;
     transform: translateX(50%);
 
@@ -171,7 +195,7 @@ body{
 .section-title{
     line-height: 1;
 
-    gap: 12px;
+    gap: 4px;
     z-index: 2;
 }
 .section-subheader-light{
@@ -188,4 +212,28 @@ body{
     color: var(--tertiary-brown);
     font-weight: 500;
     height: min-content;
+}
+
+
+.black-overlay{
+    position: absolute;
+    background-color: black;
+
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.icon-md{
+    height: 28px;
+    width: 23px;
+}
+
+.text-md{
+    font-size: 1.8rem;
+
+    color: var(--main-white);
+    font-weight: 300;
+
 }
