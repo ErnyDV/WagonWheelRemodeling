@@ -34,6 +34,7 @@ async function populateDecorationContainer(){
 function removeUnshownBoxes(){
     const decorationBoxes = [...document.querySelectorAll('.decoration-box')];
     const containerWidth = decorationContainer.offsetWidth;
+
     console.log(decorationBoxes)
     for(let i = 0; i < decorationBoxes.length; i++){
         let box = decorationBoxes[i]
